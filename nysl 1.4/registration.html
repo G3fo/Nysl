@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="styles/nysl_3.css">
+	<meta charset="utf-8">
+	<title>Registration</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Northside Youth Soccer League</h1>
+	</header>
+
+
+	<div id="title">
+		<img id="logo" src="images/nysl_logo.png" alt="logo">
+		<h2>Registration</h2>
+	</div>
+
+	<div>
+		<img id="design1" src="images/design1_image1.jpg" alt="kids playing football">
+		<img id="design2" src="images/design2_image1.jpg" alt="kids playing football">
+	</div>
+
+	<nav>
+		<a class="link" href="index.html">Home</a>
+		<a class="link" href="game_info.html">Game Information</a>
+		<a class="link" href="nysl_rules.html">NYSL Rules</a>
+		<a id="self" href="#">Registration</a>
+		<a class="link" href="about.html">About NYSL</a>
+		<a class="link" href="contact.html">Contact</a>
+	</nav>
+
+	<aside>
+		<img id="imagen" src="images/soccer_image3.jpg" alt="1 kid playing football">
+	</aside>
+
+	<section>
+
+		<h2>Registration Form</h2>
+
+		<form action="show_data.html">
+
+			<table>
+				<tr>
+					<td>Player's Full Name:<input type="text" name="fullname" id="fullName" class="text"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Street Adress:<input type="text" name="Adress" id="adress" class="text"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>City:<input type="text" name="City" id="city" class="text"></td>
+					<td>Zip Code:<input type="text" name="Zipcode" id="zipcode" class="text"></td>
+				</tr>
+				<tr>
+					<td>Birth Date (mm/dd/yyyy):<input type="date" name="Birthdate" class="text" id="birthdate"></td>
+					<td>Gender:<input type="radio" name="Sex" id="Female" value="female">
+							Female<input type="radio" name="Sex" id="Male" value="male"> Male</td>
+				</tr>
+				<tr class="line">
+					<td>Grade:
+					<input type="radio" name="Grade" id="Pre-School" value="Pre-School">Pre-School
+					<input type="radio" name="Grade" id="1st" value="1st"> 1<sup>st</sup>
+					<input type="radio" name="Grade" id="2nd" value="2nd"> 2<sup>nd</sup>
+					<input type="radio" name="Grade" id="3rd" value="3rd"> 3<sup>rd</sup>
+					<input type="radio" name="Grade" id="4th" value="4th"> 4<sup>th</sup>
+					<input type="radio" name="Grade" id="4th" value="4th"> 5<sup>th</sup>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Parent/Guardian:<input type="text" name="Parent" id="parent" class="text"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Contact Phone:<input type="tel" name="Phone" id="phone" class="text"></td>
+					<td>Contact Mail:<input type="email" name="email" id="email" class="text"></td>
+				</tr>
+			</table>
+
+			<br>
+
+			<table>
+				<tr>
+					<h3>Which elementary schools do you live near?</h3>
+				</tr>
+				<tr>
+					<td><b>First closest school:</b></td>
+					<td></td>
+					<td><b>Second Closest School:</b></td>
+					<td></td>
+				<tr>
+					<td><input type="radio" name="closestschool" value="AJ Katzenmaier">AJ Katzenmaier</td>
+					<td><input type="radio" name="closestschool" value="Marjorie P Hart">Marjorie P Hart</td>
+					<td><input type="radio" name="2ndclosestschool" value="AJ Katzenmaier">AJ Katzenmaier</td>
+					<td><input type="radio" name="2ndclosestschool" value="Marjorie P Hart">Marjorie P Hart</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="closestschool" value="Greenbay">Greenbay</td>
+					<td><input type="radio" name="closestschool" value="North Elementary">North Elementary</td>
+					<td><input type="radio" name="2ndclosestschool" value="Greenbay">Greenbay</td>
+					<td><input type="radio" name="2ndclosestschool" value="North Elementary">North Elementary</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="closestschool" value="Howard A Yeager">Howard A Yeager</td>
+					<td><input type="radio" name="closestschool" value="South Elementary">South Elementary</td>
+					<td><input type="radio" name="2ndclosestschool" value="Howard A Yeager">Howard A Yeager</td>
+					<td><input type="radio" name="2ndclosestschool" value="South Elementary">South Elementary</td>
+				</tr>
+			</table>
+
+			<br><br>
+
+			<table id="lefttable">
+				<b>What position(s) do you normally play?</b> (check all that apply)
+				<tr>
+					<td><input type="radio" name="FieldPosition" value="Forward">Forward</td>
+					<td><input type="radio" name="FieldPosition" value="Midfield">Midfield</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="FieldPosition" value="Defense">Defense</td>
+					<td><input type="radio" name="FieldPosition" value="Goalkeeper">Goalkeeper</td>
+				</tr>
+			</table>
+
+			Already Have a Uniform
+			Jersey Size: Short size:
+
+			<input type="submit" value="Submit">
+
+		</form>
+
+	</section>
+
+</body>
+
+</html>
