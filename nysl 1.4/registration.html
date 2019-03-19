@@ -94,36 +94,75 @@
 					<td><b>Second Closest School:</b></td>
 					<td></td>
 				<tr>
-					<td><input type="radio" name="closestschool" value="AJ Katzenmaier">AJ Katzenmaier</td>
-					<td><input type="radio" name="closestschool" value="Marjorie P Hart">Marjorie P Hart</td>
-					<td><input type="radio" name="2ndclosestschool" value="AJ Katzenmaier">AJ Katzenmaier</td>
-					<td><input type="radio" name="2ndclosestschool" value="Marjorie P Hart">Marjorie P Hart</td>
+					<td>
+						<input type="radio" name="closestschool" id="1sch" value="AJ Katzenmaier">
+						<label for="1sch">AJ Katzenmaier</label>
+					</td>
+					<td>
+						<input type="radio" name="closestschool" id="2sch" value="Marjorie P Hart">
+						<label for="2sch"></label>Marjorie P Hart</label>
+					</td>
+					<td>
+						<input type="radio" name="2ndclosestschool" id="7sch" value="AJ Katzenmaier">
+						<label for="7sch"></label>AJ Katzenmaier</label>
+					</td>
+					<td>
+						<input type="radio" name="2ndclosestschool" id="8sch" value="Marjorie P Hart">
+						<label for="8sch"></label>Marjorie P Hart</label>
+					</td>
 				</tr>
 				<tr>
-					<td><input type="radio" name="closestschool" value="Greenbay">Greenbay</td>
-					<td><input type="radio" name="closestschool" value="North Elementary">North Elementary</td>
-					<td><input type="radio" name="2ndclosestschool" value="Greenbay">Greenbay</td>
-					<td><input type="radio" name="2ndclosestschool" value="North Elementary">North Elementary</td>
+					<td>
+						<input type="radio" name="closestschool" id="3sch" value="Greenbay">
+						<label for="3sch">Greenbay</label></td>
+					<td>
+						<input type="radio" name="closestschool" id="4sch" value="4school">
+						<label for="4sch">North Elementary</label></td>
+					<td>
+						<input type="radio" name="2ndclosestschool" id="9sch" value="Greenbay">
+						<label for="9sch">Greenbay</label></td>
+					<td>
+						<input type="radio" name="2ndclosestschool" id="10sch" value="North Elementary">
+						<label for="10sch">North Elementary</label></td>
 				</tr>
 				<tr>
-					<td><input type="radio" name="closestschool" value="Howard A Yeager">Howard A Yeager</td>
-					<td><input type="radio" name="closestschool" value="South Elementary">South Elementary</td>
-					<td><input type="radio" name="2ndclosestschool" value="Howard A Yeager">Howard A Yeager</td>
-					<td><input type="radio" name="2ndclosestschool" value="South Elementary">South Elementary</td>
+					<td>
+						<input type="radio" name="closestschool" id="5sch" value="Howard A Yeager">
+						<label for="5sch">Howard A Yeager</label>
+					</td>
+					<td>
+						<input type="radio" name="closestschool" id="6sch" value="South Elementary">
+						<label for="6sch">South Elementary</label>
+					</td>
+					<td>
+						<input type="radio" name="2ndclosestschool" id="11sch" value="Howard A Yeager">
+						<label for="11sch">Howard A Yeager</label>
+					</td>
+					<td>
+						<input type="radio" name="2ndclosestschool" id="12sch" value="South Elementary">
+						<label for="12sch">South Elementary</label>
+					</td>
 				</tr>
 			</table>
 
 			<br><br>
 
-			<table id="lefttable">
-				<b>What position(s) do you normally play?</b> (check all that apply)
+			<table>
 				<tr>
-					<td><input type="radio" name="FieldPosition" value="Forward">Forward</td>
-					<td><input type="radio" name="FieldPosition" value="Midfield">Midfield</td>
+					<td ><b>What position(s) do you normally play?</b> (check all that apply)</td>
+					<td><b>What position(s) do you want to play?</b> (check all that apply)</td>
 				</tr>
-				<tr>
-					<td><input type="radio" name="FieldPosition" value="Defense">Defense</td>
-					<td><input type="radio" name="FieldPosition" value="Goalkeeper">Goalkeeper</td>
+				<tr id="checkboxes">
+					<td><input type="checkbox" name="FieldPosition" value="Forward">Forward</td>
+					<td><input type="checkbox" name="FieldPosition" value="Midfield">Midfield</td>
+					<td><input type="checkbox" name="WantPosition" value="Forward">Forward</td>
+					<td><input type="checkbox" name="WantPosition" value="Midfield">Midfield</td>
+				</tr>
+				<tr id="checkboxes">
+					<td><input type="checkbox" name="FieldPosition" value="Defense">Defense</td>
+					<td><input type="checkbox" name="FieldPosition" value="Goalkeeper">Goalkeeper</td>
+					<td><input type="checkbox" name="WantPosition" value="Defense">Defense</td>
+					<td><input type="checkbox" name="WantPosition" value="Goalkeeper">Goalkeeper</td>
 				</tr>
 			</table>
 
