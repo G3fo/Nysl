@@ -6,7 +6,7 @@
   position: absolute;
 }
 
-div {
+#design1, #design2 {
   display: none;
 }
 
@@ -208,7 +208,9 @@ th, td {
   float: right;
 }
 
-
+.center{
+  text-align: center;
+}
 
 .text{
   border-radius: 5px;
@@ -237,4 +239,28 @@ iframe{
 #checkboxes{
   display: flex;
   width: 100%;
+}
+
+#leftform{
+  display: inline-flex;
+}
+
+#formtable{
+  display: inline-block;
+  width: 49.5%;
+}
+
+#select{
+  display: inline;
+}
+
+#sign{
+  margin: 0px;
+}
+
+#submitbutton{
+  border-radius: 5px;
+  height: 30px;
+  font: 14px arial;
+  text-align: center;
 }

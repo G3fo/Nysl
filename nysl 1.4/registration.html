@@ -45,24 +45,28 @@
 
 			<table>
 				<tr>
-					<td>Player's Full Name:<input type="text" name="fullname" id="fullName" class="text"></td>
+					<td><label for="fullname">Player's Full Name:</label><input type="text" name="fullname" id="fullname" class="text"></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>Street Adress:<input type="text" name="Adress" id="adress" class="text"></td>
+					<td><label for="adress">Street Adress: </label> <input type="text" name="Adress" id="adress" class="text"></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>City:<input type="text" name="City" id="city" class="text"></td>
-					<td>Zip Code:<input type="text" name="Zipcode" id="zipcode" class="text"></td>
+					<td><label for="city">City:</label><input type="text" name="City" id="city" class="text"></td>
+					<td><label for="zipcode">Zip Code: </label><input type="text" name="Zipcode" id="zipcode" class="text"></td>
 				</tr>
 				<tr>
-					<td>Birth Date (mm/dd/yyyy):<input type="date" name="Birthdate" class="text" id="birthdate"></td>
-					<td>Gender:<input type="radio" name="Sex" id="Female" value="female">
-							Female<input type="radio" name="Sex" id="Male" value="male"> Male</td>
+					<td><label for="birthdate">Birth Date (mm/dd/yyyy):  </label> <input type="date" name="Birthdate" class="text" id="birthdate"></td>
+					<td>
+						Gender:
+						<input type="radio" name="Sex" id="Female" value="Female"> <label for="Female"> Female</label>
+						<input type="radio" name="Sex" id="Male" value="Male"> <label for="Male"> Male</label>
+					</td>
 				</tr>
 				<tr class="line">
-					<td>Grade:
+					<td>
+					<label>Grade: </label>
 					<input type="radio" name="Grade" id="Pre-School" value="Pre-School">Pre-School
 					<input type="radio" name="Grade" id="1st" value="1st"> 1<sup>st</sup>
 					<input type="radio" name="Grade" id="2nd" value="2nd"> 2<sup>nd</sup>
@@ -73,12 +77,12 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td>Parent/Guardian:<input type="text" name="Parent" id="parent" class="text"></td>
+					<td><label for="parent">Parent/Guardian: </label> <input type="text" name="Parent" id="parent" class="text"></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>Contact Phone:<input type="tel" name="Phone" id="phone" class="text"></td>
-					<td>Contact Mail:<input type="email" name="email" id="email" class="text"></td>
+					<td><label for="phone">Contact Phone:  </label><input type="tel" name="Phone" id="phone" class="text"></td>
+					<td><label for="email">Contact Mail:  </label><input type="email" name="email" id="email" class="text"></td>
 				</tr>
 			</table>
 
@@ -100,15 +104,15 @@
 					</td>
 					<td>
 						<input type="radio" name="closestschool" id="2sch" value="Marjorie P Hart">
-						<label for="2sch"></label>Marjorie P Hart</label>
+						<label for="2sch">Marjorie P Hart</label>
 					</td>
 					<td>
 						<input type="radio" name="2ndclosestschool" id="7sch" value="AJ Katzenmaier">
-						<label for="7sch"></label>AJ Katzenmaier</label>
+						<label for="7sch">AJ Katzenmaier</label>
 					</td>
 					<td>
 						<input type="radio" name="2ndclosestschool" id="8sch" value="Marjorie P Hart">
-						<label for="8sch"></label>Marjorie P Hart</label>
+						<label for="8sch">Marjorie P Hart</label>
 					</td>
 				</tr>
 				<tr>
@@ -145,31 +149,115 @@
 				</tr>
 			</table>
 
-			<br><br>
 
-			<table>
-				<tr>
-					<td ><b>What position(s) do you normally play?</b> (check all that apply)</td>
-					<td><b>What position(s) do you want to play?</b> (check all that apply)</td>
-				</tr>
-				<tr id="checkboxes">
-					<td><input type="checkbox" name="FieldPosition" value="Forward">Forward</td>
-					<td><input type="checkbox" name="FieldPosition" value="Midfield">Midfield</td>
-					<td><input type="checkbox" name="WantPosition" value="Forward">Forward</td>
-					<td><input type="checkbox" name="WantPosition" value="Midfield">Midfield</td>
-				</tr>
-				<tr id="checkboxes">
-					<td><input type="checkbox" name="FieldPosition" value="Defense">Defense</td>
-					<td><input type="checkbox" name="FieldPosition" value="Goalkeeper">Goalkeeper</td>
-					<td><input type="checkbox" name="WantPosition" value="Defense">Defense</td>
-					<td><input type="checkbox" name="WantPosition" value="Goalkeeper">Goalkeeper</td>
-				</tr>
-			</table>
+			<div id="formtable">
+				<table>
+					<tr>
+						<td scope="col" colspan="2"><b>What position(s) do you normally play?</b>(check all that apply)</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="NormalPosition" value="Forward">Forward</td>
+						<td><input type="checkbox" name="NormalPosition" value="Midfield">Midfield</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="NormalPosition" value="Defense">Defense</td>
+						<td><input type="checkbox" name="NormalPosition" value="Goalkeeper">Goalkeeper</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			<div id="formtable">
+				<table>
+					<tr>
+						<td scope="col" colspan="2"><b>What position(s) do you want to play?</b>(check all that apply)</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="WantPosition" value="Forward" id="wantF">Forward</td>
+						<td><input type="checkbox" name="WantPosition" value="Midfield" id="wantM">Midfield</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="WantPosition" value="Defense" id="wantD">Defense</td>
+						<td><input type="checkbox" name="WantPosition" value="Goalkeeper" id="wantG">Goalkeeper</td>
+					</tr>
+				</table>
+			</div>
 
-			Already Have a Uniform
-			Jersey Size: Short size:
+		<br>
 
-			<input type="submit" value="Submit">
+		<h4>
+			<input type="checkbox" id="uniform" onclick="return ShowHideDiv()"><label for="uniform">Already Have a Uniform</label>
+		</h4>
+		
+		<script>
+				function ShowHideDiv() {
+			
+					var div_size = document.getElementById("uniforms");
+					
+					if (uniform.checked == true){
+							div_size.style.display = "none";
+							
+					} else {
+							div_size.style.display = "block";
+					}	
+			};
+	
+		</script>
+
+		<div id="uniforms">
+			<h4>Jersey Size: </h4>
+			<select name="Jersey" id="jersey">
+				<option value=""></option>
+				<option value="Jersey Youth Small">Youth Small</option>
+				<option value="Jersey Youth Medium">Youth Medium</option>
+				<option value="Jersey Youth Large">Youth Large</option>
+				<option value="Jersey Small">Small</option>
+				<option value="Jersey Medium">Medium</option>
+				<option value="Jersey Large">Large</option>
+				<option value="Jersey Extra-Large">Extra-Large</option>
+			</select>
+
+			<br>
+
+			<h4>Shorts Size: </h4>
+			<select name="Shorts" id="shorts">
+				<option value=""></option>
+				<option value="Shorts Youth Small">Youth Small</option>
+				<option value="Shorts Youth Medium">Youth Medium</option>
+				<option value="Shorts Youth Large">Youth Large</option>
+				<option value="Shorts Small">Small</option>
+				<option value="Shorts Medium">Medium</option>
+				<option value="Shorts Large">Large</option>
+				<option value="Shorts Extra-large">Extra-Large</option>
+			</select>
+		</div>
+
+		<br>
+
+		<p id="sign">
+			<h4>Permission to Play:</h4>
+			I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+			Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+			accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+			employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+			on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+			sponsored activities, which transportation.
+			By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the
+			cancellation policy and agree to its terms. 
+		</p>
+
+		<br>
+
+		<label>Parent/Guardian's Full Name: <input type="text" name="ParentName" class="text"></label>
+
+		<label>Date: <input type="date" name="signdate" id="signdate" class="text"></label>
+
+		<br><br>
+
+		<input type="submit" value="Send Form" id="submitbutton">
+
+		<br><br><br>
+
 
 		</form>
 
