@@ -54,10 +54,6 @@ a:hover{
   color: lime;
 }
 
-#self:hover{
-  color: none;
-}
-
 #mail:hover{
   color: lime;
 }
@@ -245,7 +241,7 @@ iframe{
   display: inline-flex;
 }
 
-#formtable{
+.formtable{
   display: inline-block;
   width: 49.5%;
 }
