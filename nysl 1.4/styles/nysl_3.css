@@ -260,3 +260,16 @@ iframe{
   font: 14px arial;
   text-align: center;
 }
+
+fieldset{
+  border-radius: 10px;
+}
+
+label{
+  display: inline-block;
+  margin: 8px;
+}
+
+#RadioBCloseSchool label{
+  display: inline-block;
+}

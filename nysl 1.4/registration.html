@@ -45,109 +45,94 @@
 		<form action="show_data.html" method="GET">
 
 			<fieldset>
-				<label for="fullname">Player's Full Name:</label><input type="text" name="fullname" id="fullname" class="text">
 
-				<label for="adress">Street Adress: </label> <input type="text" name="Adress" id="adress" class="text">
-				
-				<label for="city">City:</label><input type="text" name="City" id="city" class="text">
+				<legend><b>Player's Info</b></legend>
 
-				<label for="zipcode">Zip Code: </label><input type="text" name="Zipcode" id="zipcode" class="text">
+				<label>Player's Full Name: <input type="text" name="fullname" id="fullname" class="text"></label>
+				<label>Street Adress: <input type="text" name="Adress" id="adress" class="text"></label>
+				<label>City: <input type="text" name="City" id="city" class="text"></label>
+				<label>Zip Code: <input type="text" name="Zipcode" id="zipcode" class="text"></label>
+				<label>Birth Date (mm/dd/yyyy): <input type="date" name="Birthdate" class="text" id="birthdate"></label>
 
-				<label for="birthdate">Birth Date (mm/dd/yyyy): </label> <input type="date" name="Birthdate" class="text"
-					id="birthdate">
+				<br>
 
+				<label>Gender: </label>
+
+				<label for="Female"><input type="radio" name="Sex" id="Female" value="Female"> Female</label>
+				<label for="Male"><input type="radio" name="Sex" id="Male" value="Male"> Male</label>
+				<br>
+				<label>Grade: </label>
+				<label><input type="radio" name="Grade" id="Pre-School" value="Pre-School"> Pre-School</label>
+				<label><input type="radio" name="Grade" id="1st" value="1st"> 1<sup>st</sup></label>
+				<label><input type="radio" name="Grade" id="2nd" value="2nd"> 2<sup>nd</sup></label>
+				<label><input type="radio" name="Grade" id="3rd" value="3rd"> 3<sup>rd</sup></label>
+				<label><input type="radio" name="Grade" id="4th" value="4th"> 4<sup>th</sup></label>
+				<label><input type="radio" name="Grade" id="5th" value="5th"> 5<sup>th</sup></label>
+				<br>
+				<label>Parent/Guardian: <input type="text" name="Parent" id="parent" class="text"></label>
+
+				<label>Contact Phone: <input type="tel" name="Phone" id="phone" class="text"></label>
+				<label>Contact Mail: <input type="email" name="email" id="email" class="text" placeholder="name@domain.com">
+				</label>
+			</fieldset>
+
+			<br><br>
+
+			<fieldset id="RadioBCloseSchool">
+
+				<legend><b>Which elementary schools do you live near?</b></legend>
+
+				<fieldset>
+					<legend><b>First closest school:</b></legend>
+
+					<label><input type="radio" name="closestschool" value="AJ Katzenmaier">AJ Katzenmaier</label>
+					<label><input type="radio" name="closestschool" value="Marjorie P Hart">Marjorie P Hart</label>
+					<label><input type="radio" name="closestschool" value="Greenbay">Greenbay</label>
+					<br>
+					<label><input type="radio" name="closestschool" value="North Elementary">North Elementary</label>
+					<label><input type="radio" name="closestschool" value="Howard A Yeager">Howard A Yeager</label>
+					<label><input type="radio" name="closestschool" value="South Elementary">South Elementary</label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend><b>Second Closest School:</b></legend>
+
+					<label><input type="radio" name="2ndclosestschool" value="AJ Katzenmaier">AJ Katzenmaier</label>
+					<label><input type="radio" name="2ndclosestschool" value="Marjorie P Hart">Marjorie P Hart</label>
+					<label><input type="radio" name="2ndclosestschool" value="Greenbay">Greenbay</label>
+					<br>
+					<label><input type="radio" name="2ndclosestschool" value="North Elementary">North Elementary</label>
+					<label><input type="radio" name="2ndclosestschool" value="Howard A Yeager">Howard A Yeager</label>
+					<label><input type="radio" name="2ndclosestschool" value="South Elementary">South Elementary</label>
+				</fieldset>
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend><b>What position(s) do you normally play?</b>(check all that apply)</legend>
+
+				<label><input type="checkbox" name="NormalPosition" value="Forward">Forward</label>
+				<label><input type="checkbox" name="NormalPosition" value="Midfield">Midfield</label>
+				<label><input type="checkbox" name="NormalPosition" value="Defense">Defense</label>
+				<label><input type="checkbox" name="NormalPosition" value="Goalkeeper">Goalkeeper</label>
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend><b>What position(s) do you want to play?</b>(check all that apply)</legend>
+
+				<label><input type="checkbox" name="WantPosition" value="Forward" id="wantF">Forward</label>
+				<label><input type="checkbox" name="WantPosition" value="Midfield" id="wantM">Midfield</label>
+				<label><input type="checkbox" name="WantPosition" value="Defense" id="wantD">Defense</label>
+				<label><input type="checkbox" name="WantPosition" value="Goalkeeper">Goalkeeper</label>
 			</fieldset>
 
 
-
-			Gender:
-			<input type="radio" name="Sex" id="Female" value="Female"> <label for="Female"> Female</label>
-			<input type="radio" name="Sex" id="Male" value="Male"> <label for="Male"> Male</label>
-
-
-			<label>Grade: </label>
-			<input type="radio" name="Grade" id="Pre-School" value="Pre-School">Pre-School
-			<input type="radio" name="Grade" id="1st" value="1st"> 1<sup>st</sup>
-			<input type="radio" name="Grade" id="2nd" value="2nd"> 2<sup>nd</sup>
-			<input type="radio" name="Grade" id="3rd" value="3rd"> 3<sup>rd</sup>
-			<input type="radio" name="Grade" id="4th" value="4th"> 4<sup>th</sup>
-			<input type="radio" name="Grade" id="5th" value="5th"> 5<sup>th</sup>
-			<label for="parent">Parent/Guardian: </label> <input type="text" name="Parent" id="parent" class="text">
-
-			<label for="phone">Contact Phone: </label><input type="tel" name="Phone" id="phone" class="text"><label
-				for="email">Contact Mail: </label><input type="email" name="email" id="email" class="text">
-
-			<br>
-
-			<h4>Which elementary schools do you live near?</h4>
-
-			<b>First closest school:</b>
-			<b>Second Closest School:</b>
-
-			<input type="radio" name="closestschool" id="1sch" value="AJ Katzenmaier">
-			<label for="1sch">AJ Katzenmaier</label>
-
-			<input type="radio" name="closestschool" id="2sch" value="Marjorie P Hart">
-			<label for="2sch">Marjorie P Hart</label>
-
-			<input type="radio" name="2ndclosestschool" id="7sch" value="AJ Katzenmaier">
-			<label for="7sch">AJ Katzenmaier</label>
-
-			<input type="radio" name="2ndclosestschool" id="8sch" value="Marjorie P Hart">
-			<label for="8sch">Marjorie P Hart</label>
-
-			<input type="radio" name="closestschool" id="3sch" value="Greenbay">
-			<label for="3sch">Greenbay</label></td>
-
-			<input type="radio" name="closestschool" id="4sch" value="4school">
-			<label for="4sch">North Elementary</label></td>
-
-			<input type="radio" name="2ndclosestschool" id="9sch" value="Greenbay">
-			<label for="9sch">Greenbay</label></td>
-
-			<input type="radio" name="2ndclosestschool" id="10sch" value="North Elementary">
-			<label for="10sch">North Elementary</label></td>
-
-			<input type="radio" name="closestschool" id="5sch" value="Howard A Yeager">
-			<label for="5sch">Howard A Yeager</label>
-
-			<input type="radio" name="closestschool" id="6sch" value="South Elementary">
-			<label for="6sch">South Elementary</label>
-
-			<input type="radio" name="2ndclosestschool" id="11sch" value="Howard A Yeager">
-			<label for="11sch">Howard A Yeager</label>
-
-			<input type="radio" name="2ndclosestschool" id="12sch" value="South Elementary">
-			<label for="12sch">South Elementary</label>
-
-
-
-			<div class="formtable">
-				<b>What position(s) do you normally play?</b>(check all that apply)
-				<input type="checkbox" name="NormalPosition" value="Forward">Forward
-				<input type="checkbox" name="NormalPosition" value="Midfield">Midfield
-				<input type="checkbox" name="NormalPosition" value="Defense">Defense
-				<input type="checkbox" name="NormalPosition" value="Goalkeeper">Goalkeeper
-			</div>
-
-
-			<div class="formtable">
-
-
-				<b>What position(s) do you want to play?</b>(check all that apply)
-				<input type="checkbox" name="WantPosition" value="Forward" id="wantF">Forward
-				<input type="checkbox" name="WantPosition" value="Midfield" id="wantM">Midfield
-				<input type="checkbox" name="WantPosition" value="Defense" id="wantD">Defense
-				<input type="checkbox" name="WantPosition" value="Goalkeeper" id="wantG">Goalkeeper
-
-			</div>
-
-			<br>
-
 			<h4>
-				<input type="checkbox" id="uniform" onclick="return ShowHideDiv()" name="Uniform" value="has uniform"><label
-					for="uniform">Already Have a
-					Uniform</label>
+				<label><input type="checkbox" id="uniform" onclick="return ShowHideDiv()" name="Uniform"
+						value="has uniform">Already Have a Uniform</label>
 			</h4>
 
 			<script>
@@ -216,9 +201,8 @@
 
 			<br>
 
-			<label>Parent/Guardian's Full Name: <input type="text" name="ParentName" class="text"></label>
-
-			<label>Date: <input type="date" name="signdate" id="signdate" class="text"></label>
+			<label>Parent/Guardian's Full Name: <input type="text" name="ParentName" class="text" required></label>
+			<label>Date: <input type="date" name="signdate" id="signdate" class="text" required></label>
 
 			<br><br>
 
