@@ -42,18 +42,22 @@
 
 		<h2>Registration Form</h2>
 
-		<form action="show_data.html">
+		<form action="show_data.html" method="GET">
 
+			<fieldset>
+				<label for="fullname">Player's Full Name:</label><input type="text" name="fullname" id="fullname" class="text">
 
-			<label for="fullname">Player's Full Name:</label><input type="text" name="fullname" id="fullname" class="text">
+				<label for="adress">Street Adress: </label> <input type="text" name="Adress" id="adress" class="text">
+				
+				<label for="city">City:</label><input type="text" name="City" id="city" class="text">
 
-			<label for="adress">Street Adress: </label> <input type="text" name="Adress" id="adress" class="text">
-			<label for="city">City:</label><input type="text" name="City" id="city" class="text">
+				<label for="zipcode">Zip Code: </label><input type="text" name="Zipcode" id="zipcode" class="text">
 
-			<label for="zipcode">Zip Code: </label><input type="text" name="Zipcode" id="zipcode" class="text">
+				<label for="birthdate">Birth Date (mm/dd/yyyy): </label> <input type="date" name="Birthdate" class="text"
+					id="birthdate">
 
-			<label for="birthdate">Birth Date (mm/dd/yyyy): </label> <input type="date" name="Birthdate" class="text"
-				id="birthdate">
+			</fieldset>
+
 
 
 			Gender:
@@ -70,50 +74,51 @@
 			<input type="radio" name="Grade" id="5th" value="5th"> 5<sup>th</sup>
 			<label for="parent">Parent/Guardian: </label> <input type="text" name="Parent" id="parent" class="text">
 
-<label for="phone">Contact Phone: </label><input type="tel" name="Phone" id="phone" class="text"><label for="email">Contact Mail: </label><input type="email" name="email" id="email" class="text">
+			<label for="phone">Contact Phone: </label><input type="tel" name="Phone" id="phone" class="text"><label
+				for="email">Contact Mail: </label><input type="email" name="email" id="email" class="text">
 
 			<br>
 
 			<h4>Which elementary schools do you live near?</h4>
 
-<b>First closest school:</b>
-<b>Second Closest School:</b>
+			<b>First closest school:</b>
+			<b>Second Closest School:</b>
 
-						<input type="radio" name="closestschool" id="1sch" value="AJ Katzenmaier">
-						<label for="1sch">AJ Katzenmaier</label>
+			<input type="radio" name="closestschool" id="1sch" value="AJ Katzenmaier">
+			<label for="1sch">AJ Katzenmaier</label>
 
-						<input type="radio" name="closestschool" id="2sch" value="Marjorie P Hart">
-						<label for="2sch">Marjorie P Hart</label>
+			<input type="radio" name="closestschool" id="2sch" value="Marjorie P Hart">
+			<label for="2sch">Marjorie P Hart</label>
 
-						<input type="radio" name="2ndclosestschool" id="7sch" value="AJ Katzenmaier">
-						<label for="7sch">AJ Katzenmaier</label>
+			<input type="radio" name="2ndclosestschool" id="7sch" value="AJ Katzenmaier">
+			<label for="7sch">AJ Katzenmaier</label>
 
-						<input type="radio" name="2ndclosestschool" id="8sch" value="Marjorie P Hart">
-						<label for="8sch">Marjorie P Hart</label>
+			<input type="radio" name="2ndclosestschool" id="8sch" value="Marjorie P Hart">
+			<label for="8sch">Marjorie P Hart</label>
 
-						<input type="radio" name="closestschool" id="3sch" value="Greenbay">
-						<label for="3sch">Greenbay</label></td>
+			<input type="radio" name="closestschool" id="3sch" value="Greenbay">
+			<label for="3sch">Greenbay</label></td>
 
-						<input type="radio" name="closestschool" id="4sch" value="4school">
-						<label for="4sch">North Elementary</label></td>
+			<input type="radio" name="closestschool" id="4sch" value="4school">
+			<label for="4sch">North Elementary</label></td>
 
-						<input type="radio" name="2ndclosestschool" id="9sch" value="Greenbay">
-						<label for="9sch">Greenbay</label></td>
+			<input type="radio" name="2ndclosestschool" id="9sch" value="Greenbay">
+			<label for="9sch">Greenbay</label></td>
 
-						<input type="radio" name="2ndclosestschool" id="10sch" value="North Elementary">
-						<label for="10sch">North Elementary</label></td>
+			<input type="radio" name="2ndclosestschool" id="10sch" value="North Elementary">
+			<label for="10sch">North Elementary</label></td>
 
-						<input type="radio" name="closestschool" id="5sch" value="Howard A Yeager">
-						<label for="5sch">Howard A Yeager</label>
+			<input type="radio" name="closestschool" id="5sch" value="Howard A Yeager">
+			<label for="5sch">Howard A Yeager</label>
 
-						<input type="radio" name="closestschool" id="6sch" value="South Elementary">
-						<label for="6sch">South Elementary</label>
+			<input type="radio" name="closestschool" id="6sch" value="South Elementary">
+			<label for="6sch">South Elementary</label>
 
-						<input type="radio" name="2ndclosestschool" id="11sch" value="Howard A Yeager">
-						<label for="11sch">Howard A Yeager</label>
+			<input type="radio" name="2ndclosestschool" id="11sch" value="Howard A Yeager">
+			<label for="11sch">Howard A Yeager</label>
 
-						<input type="radio" name="2ndclosestschool" id="12sch" value="South Elementary">
-						<label for="12sch">South Elementary</label>
+			<input type="radio" name="2ndclosestschool" id="12sch" value="South Elementary">
+			<label for="12sch">South Elementary</label>
 
 
 
@@ -129,11 +134,10 @@
 			<div class="formtable">
 
 
-				<b>What position(s) do you want to play?</b>(check all that apply)<input type="checkbox" name="WantPosition"
-					value="Forward" id="wantF">Forward
+				<b>What position(s) do you want to play?</b>(check all that apply)
+				<input type="checkbox" name="WantPosition" value="Forward" id="wantF">Forward
 				<input type="checkbox" name="WantPosition" value="Midfield" id="wantM">Midfield
 				<input type="checkbox" name="WantPosition" value="Defense" id="wantD">Defense
-
 				<input type="checkbox" name="WantPosition" value="Goalkeeper" id="wantG">Goalkeeper
 
 			</div>
@@ -141,7 +145,8 @@
 			<br>
 
 			<h4>
-				<input type="checkbox" id="uniform" onclick="return ShowHideDiv()"><label for="uniform">Already Have a
+				<input type="checkbox" id="uniform" onclick="return ShowHideDiv()" name="Uniform" value="has uniform"><label
+					for="uniform">Already Have a
 					Uniform</label>
 			</h4>
 
