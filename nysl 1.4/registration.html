@@ -42,222 +42,173 @@
 
 		<h2>Registration Form</h2>
 
-		<form action="show_data.html">
+		<form action="show_data.html" method="GET">
 
-			<table>
-				<tr>
-					<td><label for="fullname">Player's Full Name:</label><input type="text" name="fullname" id="fullname" class="text"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><label for="adress">Street Adress: </label> <input type="text" name="Adress" id="adress" class="text"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><label for="city">City:</label><input type="text" name="City" id="city" class="text"></td>
-					<td><label for="zipcode">Zip Code: </label><input type="text" name="Zipcode" id="zipcode" class="text"></td>
-				</tr>
-				<tr>
-					<td><label for="birthdate">Birth Date (mm/dd/yyyy):  </label> <input type="date" name="Birthdate" class="text" id="birthdate"></td>
-					<td>
-						Gender:
-						<input type="radio" name="Sex" id="Female" value="Female"> <label for="Female"> Female</label>
-						<input type="radio" name="Sex" id="Male" value="Male"> <label for="Male"> Male</label>
-					</td>
-				</tr>
-				<tr class="line">
-					<td>
-					<label>Grade: </label>
-					<input type="radio" name="Grade" id="Pre-School" value="Pre-School">Pre-School
-					<input type="radio" name="Grade" id="1st" value="1st"> 1<sup>st</sup>
-					<input type="radio" name="Grade" id="2nd" value="2nd"> 2<sup>nd</sup>
-					<input type="radio" name="Grade" id="3rd" value="3rd"> 3<sup>rd</sup>
-					<input type="radio" name="Grade" id="4th" value="4th"> 4<sup>th</sup>
-					<input type="radio" name="Grade" id="5th" value="5th"> 5<sup>th</sup>
-					</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><label for="parent">Parent/Guardian: </label> <input type="text" name="Parent" id="parent" class="text"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><label for="phone">Contact Phone:  </label><input type="tel" name="Phone" id="phone" class="text"></td>
-					<td><label for="email">Contact Mail:  </label><input type="email" name="email" id="email" class="text"></td>
-				</tr>
-			</table>
+			<fieldset>
+
+				<legend><b>Player's Info</b></legend>
+
+				<label>Player's Full Name: <input type="text" name="fullname" id="fullname" class="text"></label>
+				<label>Street Adress: <input type="text" name="Adress" id="adress" class="text"></label>
+				<label>City: <input type="text" name="City" id="city" class="text"></label>
+				<label>Zip Code: <input type="text" name="Zipcode" id="zipcode" class="text"></label>
+				<label>Birth Date (mm/dd/yyyy): <input type="date" name="Birthdate" class="text" id="birthdate"></label>
+
+				<br>
+
+				<label>Gender: </label>
+
+				<label for="Female"><input type="radio" name="Sex" id="Female" value="Female"> Female</label>
+				<label for="Male"><input type="radio" name="Sex" id="Male" value="Male"> Male</label>
+				<br>
+				<label>Grade: </label>
+				<label><input type="radio" name="Grade" id="Pre-School" value="Pre-School"> Pre-School</label>
+				<label><input type="radio" name="Grade" id="1st" value="1st"> 1<sup>st</sup></label>
+				<label><input type="radio" name="Grade" id="2nd" value="2nd"> 2<sup>nd</sup></label>
+				<label><input type="radio" name="Grade" id="3rd" value="3rd"> 3<sup>rd</sup></label>
+				<label><input type="radio" name="Grade" id="4th" value="4th"> 4<sup>th</sup></label>
+				<label><input type="radio" name="Grade" id="5th" value="5th"> 5<sup>th</sup></label>
+				<br>
+				<label>Parent/Guardian: <input type="text" name="Parent" id="parent" class="text"></label>
+
+				<label>Contact Phone: <input type="tel" name="Phone" id="phone" class="text"></label>
+				<label>Contact Mail: <input type="email" name="email" id="email" class="text" placeholder="name@domain.com">
+				</label>
+			</fieldset>
+
+			<br><br>
+
+			<fieldset id="RadioBCloseSchool">
+
+				<legend><b>Which elementary schools do you live near?</b></legend>
+
+				<fieldset>
+					<legend><b>First closest school:</b></legend>
+
+					<label><input type="radio" name="closestschool" value="AJ Katzenmaier">AJ Katzenmaier</label>
+					<label><input type="radio" name="closestschool" value="Marjorie P Hart">Marjorie P Hart</label>
+					<label><input type="radio" name="closestschool" value="Greenbay">Greenbay</label>
+					<br>
+					<label><input type="radio" name="closestschool" value="North Elementary">North Elementary</label>
+					<label><input type="radio" name="closestschool" value="Howard A Yeager">Howard A Yeager</label>
+					<label><input type="radio" name="closestschool" value="South Elementary">South Elementary</label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend><b>Second Closest School:</b></legend>
+
+					<label><input type="radio" name="2ndclosestschool" value="AJ Katzenmaier">AJ Katzenmaier</label>
+					<label><input type="radio" name="2ndclosestschool" value="Marjorie P Hart">Marjorie P Hart</label>
+					<label><input type="radio" name="2ndclosestschool" value="Greenbay">Greenbay</label>
+					<br>
+					<label><input type="radio" name="2ndclosestschool" value="North Elementary">North Elementary</label>
+					<label><input type="radio" name="2ndclosestschool" value="Howard A Yeager">Howard A Yeager</label>
+					<label><input type="radio" name="2ndclosestschool" value="South Elementary">South Elementary</label>
+				</fieldset>
+			</fieldset>
 
 			<br>
 
-			<h4>Which elementary schools do you live near?</h4>
+			<fieldset>
+				<legend><b>What position(s) do you normally play?</b>(check all that apply)</legend>
 
-			<table>
-				<tr>
-					<td><b>First closest school:</b></td>
-					<td></td>
-					<td><b>Second Closest School:</b></td>
-					<td></td>
-				<tr>
-					<td>
-						<input type="radio" name="closestschool" id="1sch" value="AJ Katzenmaier">
-						<label for="1sch">AJ Katzenmaier</label>
-					</td>
-					<td>
-						<input type="radio" name="closestschool" id="2sch" value="Marjorie P Hart">
-						<label for="2sch">Marjorie P Hart</label>
-					</td>
-					<td>
-						<input type="radio" name="2ndclosestschool" id="7sch" value="AJ Katzenmaier">
-						<label for="7sch">AJ Katzenmaier</label>
-					</td>
-					<td>
-						<input type="radio" name="2ndclosestschool" id="8sch" value="Marjorie P Hart">
-						<label for="8sch">Marjorie P Hart</label>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="radio" name="closestschool" id="3sch" value="Greenbay">
-						<label for="3sch">Greenbay</label></td>
-					<td>
-						<input type="radio" name="closestschool" id="4sch" value="4school">
-						<label for="4sch">North Elementary</label></td>
-					<td>
-						<input type="radio" name="2ndclosestschool" id="9sch" value="Greenbay">
-						<label for="9sch">Greenbay</label></td>
-					<td>
-						<input type="radio" name="2ndclosestschool" id="10sch" value="North Elementary">
-						<label for="10sch">North Elementary</label></td>
-				</tr>
-				<tr>
-					<td>
-						<input type="radio" name="closestschool" id="5sch" value="Howard A Yeager">
-						<label for="5sch">Howard A Yeager</label>
-					</td>
-					<td>
-						<input type="radio" name="closestschool" id="6sch" value="South Elementary">
-						<label for="6sch">South Elementary</label>
-					</td>
-					<td>
-						<input type="radio" name="2ndclosestschool" id="11sch" value="Howard A Yeager">
-						<label for="11sch">Howard A Yeager</label>
-					</td>
-					<td>
-						<input type="radio" name="2ndclosestschool" id="12sch" value="South Elementary">
-						<label for="12sch">South Elementary</label>
-					</td>
-				</tr>
-			</table>
+				<label><input type="checkbox" name="NormalPosition" value="Forward">Forward</label>
+				<label><input type="checkbox" name="NormalPosition" value="Midfield">Midfield</label>
+				<label><input type="checkbox" name="NormalPosition" value="Defense">Defense</label>
+				<label><input type="checkbox" name="NormalPosition" value="Goalkeeper">Goalkeeper</label>
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend><b>What position(s) do you want to play?</b>(check all that apply)</legend>
+
+				<label><input type="checkbox" name="WantPosition" value="Forward" id="wantF">Forward</label>
+				<label><input type="checkbox" name="WantPosition" value="Midfield" id="wantM">Midfield</label>
+				<label><input type="checkbox" name="WantPosition" value="Defense" id="wantD">Defense</label>
+				<label><input type="checkbox" name="WantPosition" value="Goalkeeper">Goalkeeper</label>
+			</fieldset>
 
 
-			<div class="formtable">
-				<table>
-					<tr>
-						<td colspan="2"><b>What position(s) do you normally play?</b>(check all that apply)</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="NormalPosition" value="Forward">Forward</td>
-						<td><input type="checkbox" name="NormalPosition" value="Midfield">Midfield</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="NormalPosition" value="Defense">Defense</td>
-						<td><input type="checkbox" name="NormalPosition" value="Goalkeeper">Goalkeeper</td>
-					</tr>
-				</table>
-			</div>
-			
-			
-			<div class="formtable">
-				<table>
-					<tr>
-						<td colspan="2"><b>What position(s) do you want to play?</b>(check all that apply)</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="WantPosition" value="Forward" id="wantF">Forward</td>
-						<td><input type="checkbox" name="WantPosition" value="Midfield" id="wantM">Midfield</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="WantPosition" value="Defense" id="wantD">Defense</td>
-						<td><input type="checkbox" name="WantPosition" value="Goalkeeper" id="wantG">Goalkeeper</td>
-					</tr>
-				</table>
-			</div>
+			<h4>
+				<label><input type="checkbox" id="uniform" onclick="return ShowHideDiv()" name="Uniform"
+						value="has uniform">Already Have a Uniform</label>
+			</h4>
 
-		<br>
-
-		<h4>
-			<input type="checkbox" id="uniform" onclick="return ShowHideDiv()"><label for="uniform">Already Have a Uniform</label>
-		</h4>
-		
-		<script>
+			<script>
 				function ShowHideDiv() {
-			
-					var div_size = document.getElementById("uniforms");
-					
-					if (uniform.checked == true){
-							div_size.style.display = "none";
-							
-					} else {
-							div_size.style.display = "block";
-					}	
-			};
-	
-		</script>
 
-		<div id="uniforms">
-			<h4>Jersey Size: </h4>
-			<select name="Jersey" id="jersey">
-				<option value="none">None</option>
-				<option value="Jersey Youth Small">Youth Small</option>
-				<option value="Jersey Youth Medium">Youth Medium</option>
-				<option value="Jersey Youth Large">Youth Large</option>
-				<option value="Jersey Small">Small</option>
-				<option value="Jersey Medium">Medium</option>
-				<option value="Jersey Large">Large</option>
-				<option value="Jersey Extra-Large">Extra-Large</option>
-			</select>
+					var div_size = document.getElementById("uniforms");
+
+					if (uniform.checked == true) {
+						div_size.style.display = "none";
+
+					} else {
+						div_size.style.display = "block";
+					}
+				};
+
+			</script>
+
+			<div id="uniforms">
+				<h4>Jersey Size: </h4>
+				<select name="Jersey" id="jersey">
+					<option value="none">None</option>
+					<option value="Jersey Youth Small">Youth Small</option>
+					<option value="Jersey Youth Medium">Youth Medium</option>
+					<option value="Jersey Youth Large">Youth Large</option>
+					<option value="Jersey Small">Small</option>
+					<option value="Jersey Medium">Medium</option>
+					<option value="Jersey Large">Large</option>
+					<option value="Jersey Extra-Large">Extra-Large</option>
+				</select>
+
+				<br>
+
+				<h4>Shorts Size: </h4>
+				<select name="Shorts" id="shorts">
+					<option value="none">None</option>
+					<option value="Shorts Youth Small">Youth Small</option>
+					<option value="Shorts Youth Medium">Youth Medium</option>
+					<option value="Shorts Youth Large">Youth Large</option>
+					<option value="Shorts Small">Small</option>
+					<option value="Shorts Medium">Medium</option>
+					<option value="Shorts Large">Large</option>
+					<option value="Shorts Extra-large">Extra-Large</option>
+				</select>
+			</div>
 
 			<br>
 
-			<h4>Shorts Size: </h4>
-			<select name="Shorts" id="shorts">
-				<option value="none">None</option>
-				<option value="Shorts Youth Small">Youth Small</option>
-				<option value="Shorts Youth Medium">Youth Medium</option>
-				<option value="Shorts Youth Large">Youth Large</option>
-				<option value="Shorts Small">Small</option>
-				<option value="Shorts Medium">Medium</option>
-				<option value="Shorts Large">Large</option>
-				<option value="Shorts Extra-large">Extra-Large</option>
-			</select>
-		</div>
 
-		<br>
+			<h4>Permission to Play:</h4>
+			<p id="sign">
+				I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules
+				of the Northside Youth
+				Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in
+				consideration for the “League”
+				accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise
+				indemnify NYSL, their
+				employees and associated personnel and volunteers, including the facilities used for practices and games,
+				against any claim by or
+				on behalf of the registrant as a result of the registrant’s participation in the program and/or being
+				transported to or from NYSL
+				sponsored activities, which transportation.
+				By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I
+				also acknowledge that I have read the
+				cancellation policy and agree to its terms.
+			</p>
 
+			<br>
 
-		<h4>Permission to Play:</h4>
-		<p id="sign">
-			I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
-			Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
-			accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
-			employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
-			on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
-			sponsored activities, which transportation.
-			By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the
-			cancellation policy and agree to its terms. 
-		</p>
+			<label>Parent/Guardian's Full Name: <input type="text" name="ParentName" class="text" required></label>
+			<label>Date: <input type="date" name="signdate" id="signdate" class="text" required></label>
 
-		<br>
+			<br><br>
 
-		<label>Parent/Guardian's Full Name: <input type="text" name="ParentName" class="text"></label>
+			<input type="submit" value="Send Form" id="submitbutton">
 
-		<label>Date: <input type="date" name="signdate" id="signdate" class="text"></label>
-
-		<br><br>
-
-		<input type="submit" value="Send Form" id="submitbutton">
-
-		<br><br><br><br>
+			<br><br><br><br>
 
 
 		</form>
